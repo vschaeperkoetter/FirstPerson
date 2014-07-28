@@ -11,9 +11,7 @@ RSpec.describe "home" do
       visit '/'
       expect(page.status_code).to eq(200)
     end
-
-  end
-  
+  end  
 
   context 'buttons' do
     it "has signin button" do
@@ -25,19 +23,6 @@ RSpec.describe "home" do
       visit '/'
       expect(page).to have_selector("a", text: "Sign Up")
     end
-
-    # it "button redirects user" do
-    #   visit '/'
-    #   click_link('Sign In')
-    #   expect(current_path).to 
-
-    # end  
-
   end
-
-
-
-  
-
 end
 

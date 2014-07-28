@@ -2,13 +2,12 @@ require 'rails_helper'
 
 feature "Quests", :type => :feature do
 	describe "User Quests page" do
-
 		it "gives a 200 status code" do
       visit '/'
       expect(page.status_code).to eq(200)
     end
 
-	  it "renders the quest title div" do
+	  it "renders the quest title" do
 	  	visit '/quests'
 	  	expect(page).to have_content("Create a quest")
 	  end
@@ -33,19 +32,9 @@ feature "Quests", :type => :feature do
 	  	expect(page).to have_css('div#map')
 	  end
 
-	  it "renders the map" do
-	  	visit '/quests'
-	  	expect(page).to have_css('div#map')
-	  end
-
 	  it "renders fields in 'Create a quest' " do
 	  	visit '/quests'
 	  	expect(page).to have_css('.new_quest')
-	  end
-
-	  it "renders title field " do
-	  	visit '/quests'
-	  	expect(page).to have_css('input#quest_title')
 	  end
 
 	  it "renders title field " do
@@ -76,11 +65,6 @@ feature "Quests", :type => :feature do
 	  it "renders 'Add your checkpoints' button" do
 	  	visit '/quests'
 	  	expect(page).to have_css('input[name="commit"][type="submit"][value="Add your checkpoints!"]')
-	  end
-
-	  
-
-
-	  
+	  end	  
 	end
 end

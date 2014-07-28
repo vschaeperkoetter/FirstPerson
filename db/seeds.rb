@@ -19,13 +19,13 @@ player.gender = "male"
 player.foursquare_id = 2
 player.save!
 
-# bar = Location.new
-# bar.name = "Awesome Bar"
-# bar.venue_type = "Bar"
-# bar.latitude = 40.7903
-# bar.longitude = -73.9597
-# bar.address = "48 Wall St, New York, NY 10005"
-# bar.save!
+bar = Location.new
+bar.name = "Awesome Bar"
+bar.venue_type = "Bar"
+bar.latitude = 40.7903
+bar.longitude = -73.9597
+bar.address = "48 Wall St, New York, NY 10005"
+bar.save!
 
 checkin_loc = Location.new
 checkin_loc.name = "CheckIn0"
