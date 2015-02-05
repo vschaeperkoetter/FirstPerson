@@ -48,41 +48,6 @@ feature "Quests", :type => :feature do
       expect(page).to have_css('div.list')
     end
 
-    # it "renders title field " do
-    #   visit '/quests'
-    #   expect(page).to have_css('input#quest_title')
-    # end
-
-    # it "renders title field " do
-    #   visit '/quests'
-    #   expect(page).to have_css('input#quest_title')
-    # end
-
-    # it "renders description field " do
-    #   visit '/quests'
-    #   expect(page).to have_css('textarea#quest_description')
-    # end
-
-    # it "renders user limit field " do
-    #   visit '/quests'
-    #   expect(page).to have_css('input#quest_user_limit')
-    # end
-
-    # it "renders category field " do
-    #   visit '/quests'
-    #   expect(page).to have_css('input#quest_category')
-    # end
-
-    # it "renders quest end date field " do
-    #   visit '/quests'
-    #   expect(page).to have_css('input#quest_end_date')
-    # end
-
-    # it "renders 'Add your checkpoints' button" do
-    #   visit '/quests'
-    #   expect(page).to have_css('input[name="commit"][type="submit"][value="Add your checkpoints!"]')
-    # end
-
   end
   
 end
